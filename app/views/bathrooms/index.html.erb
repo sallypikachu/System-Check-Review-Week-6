@@ -1,0 +1,12 @@
+<% flash.each do |key, value| %>
+  <%= value %>
+<% end %>
+
+<h1>Bathrooms</h1>
+
+<ul>
+  <% @bathrooms.each do |bathroom| %>
+    <li> <%= bathroom.name %> </li>
+    <%= bathroom.description %>
+  <% end %>
+</ul>
